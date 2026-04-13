@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AbRahman | Student Portfolio</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, sans-serif; }
+  body { background: #f5f7fa; color: #333; line-height: 1.6; }
+  header { background: #1e293b; color: #fff; padding: 20px 5%; text-align: center; }
+  header h1 { font-size: 2rem; margin-bottom: 5px; }
+  header p { color: #cbd5e1; }
+  nav { background: #334155; display: flex; justify-content: center; flex-wrap: wrap; }
+  nav a { color: #fff; padding: 14px 20px; text-decoration: none; font-weight: 500; }
+  nav a:hover { background: #0ea5e9; }
+  .hero { padding: 80px 5%; text-align: center; background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); color: white; }
+  .hero h2 { font-size: 2.5rem; margin-bottom: 15px; }
+  .hero p { font-size: 1.1rem; margin-bottom: 25px; opacity: 0.9; }
+  .btn { background: #0ea5e9; color: #fff; padding: 12px 28px; border-radius: 6px; text-decoration: none; font-weight: 600; display: inline-block; }
+  .btn:hover { background: #38bdf8; }
+  .container { padding: 60px 5%; max-width: 1200px; margin: auto; }
+  .section-title { text-align: center; font-size: 2rem; margin-bottom: 40px; color: #1e293b; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
+  .card { background: #fff; padding: 25px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+  .card h3 { margin-bottom: 12px; color: #0f172a; font-size: 1.3rem; }
+  .about { background: #fff; border-radius: 10px; padding: 30px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); text-align: center; }
+  .contact { background: #e2e8f0; }
+  form { max-width: 500px; margin: auto; display: grid; gap: 15px; }
+  input, textarea { padding: 12px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; }
+  button { padding: 12px; background: #0ea5e9; border: none; color: #fff; border-radius: 6px; cursor: pointer; font-size: 1rem; font-weight: 600; }
+  button:hover { background: #0284c7; }
+  footer { background: #1e293b; color: #94a3b8; text-align: center; padding: 20px 5%; font-size: 0.9rem; }
+  @media (max-width: 768px) {
+    .hero h2 { font-size: 2rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>AbRahman</h1>
+  <p>Student | Sindh University Jamshoro | Batch 2k26</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+  <h2>Welcome to My Portfolio</h2>
+  <p>Computer Science Student passionate about Web Development and building systems that help students succeed.</p>
+  <a href="#projects" class="btn">View My Projects</a>
+</section>
+
+<div class="container" id="about">
+  <h2 class="section-title">About Me</h2>
+  <div class="about">
+    <p>I am AbRahman, a 2k26 batch student at Sindh University Jamshoro pursuing Computer Science. I focus on full-stack web development and love creating platforms that make student life easier. My goal is to build practical solutions for education using modern tech.</p>
+  </div>
+</div>
+
+<div class="container" id="projects">
+  <h2 class="section-title">My Projects</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>1. Student Portal Website</h3>
+      <p>A centralized web platform where students can access academic resources, timetables, results, and important announcements in one place.</p>
+    </div>
+    <div class="card">
+      <h3>2. OSMS - Online Student Management System</h3>
+      <p>Complete management system for handling student data, course registration, attendance tracking, and fee records for institutes.</p>
+    </div>
+    <div class="card">
+      <h3>3. SLW - Student Learning Website</h3>
+      <p>E-learning platform with video lectures, notes, quizzes, and a results system to track student performance and progress.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container contact" id="contact">
+  <h2 class="section-title">Contact Me</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="4" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+
+<footer>
+  <p>© 2026 AbRahman | Sindh University Jamshoro. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
